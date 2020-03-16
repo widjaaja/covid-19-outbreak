@@ -1,0 +1,123 @@
+.asideContainer {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: rgba(20, 21, 20, 0.93);
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    user-select: none;
+    transform: translate(-30%, -50%);
+    cursor: pointer;
+}
+
+/* .slideLeft {
+    transition: 1s;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+} */
+
+.asideContainerTrue {
+    position: absolute;
+    display: flex;
+    z-index: 9999;
+    width: 40%;
+    height: 90%;
+    top: 50%;
+    user-select: none;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+}
+
+.slideRight{
+    animation-name: slideRight;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+.slideLeft{
+    animation-name: slideLeft;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+@keyframes slideLeft {
+    0% {
+      opacity: 0;
+      transform: translate(0px, -50%);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate(30px, -50%);
+    }
+  
+    80% {
+      transform: translate(-10px, -50%);
+    }
+  
+    100% {
+      transform: translate(-2000px, -50%);
+    }
+  }
+
+  @keyframes slideRight {
+    0% {
+      opacity: 0;
+      transform: translate(-2000px, -50%);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate(-10px, -50%);
+    }
+  
+    80% {
+      transform: translate(20px, -50%);
+    }
+  
+    100% {
+      transform: translate(0px, -50%);
+    }
+  }
+
+.contentTrue {
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.93);
+}
+
+.arrowTrue {
+    position: relative;
+    width: 10%;
+    height: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    background-color: rgba(20, 21, 20, 0.73);
+    cursor: pointer;
+    transform: rotate(180deg);
+    padding: 5px;
+}
+
+.arrow {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.arrowBack {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+img svg {
+    fill: antiquewhite;
+}
